@@ -354,5 +354,182 @@
   padding-right:1.5em ;
 }
 
+#certificates {
+  padding: 100px 200px;
+  background: url(images/back33.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#certificates .title{
+    letter-spacing: 1px;
+    color: #3f81fc;
+    text-shadow: 2px 2px #f8f6f6;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#certificates .card-cer {
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 30em;
+  padding: 0px;
+  box-shadow: 0 5px 25px rgba(58, 108, 244, 0.5);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  overflow: hidden;
+  margin: 20px;          /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+#certificates .card-cer:hover {
+  transform: scale(1.2);
+}
+
+#certificates .card-cer img {
+  color: #3a6cf4;
+  margin: 1px;
+  width: 100%;
+  align-items: center;
+}
+
+
+
+
+.contacts {
+  min-height: 82vh;
+  padding: 50px 200px;
+}
+
+
+.contact-card {
+  display: flex;              /* allow me align text */
+  justify-content: center;    /*  align text */
+  flex-direction: row;  /* the cards arrange in row */
+  flex-wrap: wrap;   /* the extra card will be in another row */
+  align-content: center;
+  background-color: #fff;
+  width: 30em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  padding: 25px;            /* space inside cards */
+  margin: 15px;             /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+  
+}
+
+.contact-card2 {
+  background-color: #fff;
+  width: 62em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  padding: 25px;            /* space inside cards */
+  margin: 15px;             /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+.contact-card .info {
+  text-align: right;
+  padding-left: 0.5em;
+}
+
+
+.contacts .title {
+  display: flex;       /* allow me align text */
+  justify-content: center;    /*  align text */
+  letter-spacing: 1px;
+  color: #3a6cf4;
+  text-shadow: 2px 2px #878694;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.contact-card .icon {
+  color: #3a6cf4;
+  font-size: 4em;
+  text-align: right;
+  padding-right: 1.5em;
+}
+
+.contact-card2 .icon {
+  color: #3a6cf4;
+  font-size: 2em;
+  text-align: center;
+}
+
+.contact-card .info {
+  text-align: center;
+}
+
+.contact-card .info h3{
+  color: #3a6cf4;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact-card .info p{
+  color: #070707;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+
+.contact-card2 .icon span{
+  color: #3a6cf4;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact-card2 .icon spanp{
+  color: #070707;
+  font-size: 0.5em;
+  font-weight: 500;
+  margin: 10px;
+  }
+
+.contact-card2 .icon {
+padding-left: 25px;
+}
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1em;
+  font-weight: 400;
+  text-shadow: 0.3px 0.4px #f8f6f6;
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a{
+  color: #f8f6f6;
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  text-shadow: 2px 3px #3a6cf4;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
