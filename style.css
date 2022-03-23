@@ -9,7 +9,6 @@
   }
 
   header {
-    
     background-color: #333;
     width: 100%;
     position: fixed;
@@ -22,9 +21,9 @@
   .topnav a {
     color: #f2f2f2;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 20px 16px;
-    font-weight: 300;
+    font-weight: 600;
     padding-left: 20px;
   }
   
@@ -34,7 +33,7 @@
   }
   
   .topnav a.active {
-    background-color: #2e65ad;
+    background-color: #3f81fc;
     color: white;
   }
 
@@ -43,21 +42,36 @@
 }
 
 .main {
-    padding: 100px 300px;
+    padding: 150px 200px;
     width: 100%;
     min-height: 100vh;
     display: flex;
     text-align: center;
-    align-items: center;
-    background: url(images/background5.jpg) no-repeat;
+    align-items: top,center;
+    background: url(images/back33.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+.avatar {
+  color: #fff;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.avatar img{
+ background-color: #3f81fc;
+ border-radius: 50%;
+}
+
 .main h2 {
     color: #fff;
+    text-shadow: 2px 2px #3f81fc;
     font-size: 2.5em;
+    text-transform: uppercase;
     font-weight: bolder;
     display: inline-block;
     margin-bottom: 10px;
@@ -68,7 +82,8 @@
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #4e9eff;
+    color: #3f81fc;
+    text-shadow: 2px 2px #f8f6f6;
     font-size: 3.5em;
     font-weight: bolder;
 }
@@ -76,25 +91,26 @@
 .main h3 {
     font-family: 'Fira Sans', sans-serif;
     color: #fff;
-    font-size: 1.2em;
+    text-shadow: 1.5px 1.5px #3f81fc;
+    font-size: 1.3em;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;        /* delete the line under text*/
+  font-size: 1.1em;         
+  font-weight: 600;
+  display: inline-block;        /* allow me use padding */
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;        /* increase the space between letters */
+  border-radius: 15px;       /* curved edges */
+  margin-bottom: 40px;
+  transition: 0.7s ease;      /* its manner when mouse pointer move to it */
 }
 
 .main-btn:hover {
@@ -102,16 +118,241 @@
     transform: scale(1.1);
 }
 
-.code-icons i{
-  color: #fff;
-    font-size: 1.7em;
-    padding-right: 30px;
+.cards{
+  min-height: 100vh;
+}
+
+.title {
+  display: flex;       /* allow me align text */
+  justify-content: center;    /*  align text */
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;              /* allow me align text */
+  justify-content: center;    /*  align text */
+  flex-direction: row;  /* the cards arrange in row */
+  flex-wrap: wrap;   /* the extra card will be in another row */
+  align-content: center;
+}
+
+.bio{
+  background-color: #fff;
+  width: 80em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  padding: 25px;            /* space inside cards */
+  margin: 15px;             /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */ 
+}
+
+.bio-title {
+  display: flex;       /* allow me align text */
+  justify-content: center;    /*  align text */
+  letter-spacing: 1px;
+  color: #3a6cf4;
+  text-shadow: 2px 2px #878694;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.bio .info {
+ text-align: left;
+  margin: 5px;
+}
+
+.bio .info p {
+  font-size: 1em;
+  font-weight: 400;
+  word-spacing: 1.7px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding-bottom: 0.8em;
+}
+
+.bio .info h3 span{
+  color: #3a6cf4;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.bio .info h3 {
+  color: #3a6cf4;
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.content .bio-card{
+  background-color: #fff;
+  width: 8em;
+  align-content: center;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  padding: 25px;            /* space inside cards */
+  margin: 15px;             /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+.content .bio-card .icon {
+  margin-left: 10px;
+}
+
+
+.content .bio-card img {
+  width: 90%;
+}
+
+.content .info-code h3{
+  color: #3a6cf4;
+  font-size: 0.9em;
+  font-weight: 700; 
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  padding: 25px;            /* space inside cards */
+  margin: 15px;             /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+#services {
+  padding: 100px 200px;
+  background: url(images/back33.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#services .title{
+    letter-spacing: 1px;
+    color: #3f81fc;
+    text-shadow: 2px 2px #f8f6f6;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#services .card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 25em;
+  width: 18.5em;
+  padding: 15px;
+  box-shadow: 0 5px 25px rgba(58, 108, 244, 0.5);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  overflow: hidden;
+  margin: 20px;          /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+#services .card:hover {
+  transform: scale(1.1);
+}
+
+#services .card .icon {
+  color: #3a6cf4;
+  font-size: 1em;
+  text-align: center;
+}
+
+#services .card img {
+  color: #3a6cf4;
+  margin-top: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+#projects {
+  padding: 100px 200px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+#projects .title {
+  display: flex;       /* allow me align text */
+  justify-content: center;    /*  align text */
+  letter-spacing: 1px;
+  color: #3a6cf4;
+  text-shadow: 2px 2px #878694;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#projects .card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 13em;
+  width: 19em;
+  padding: 0px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  border-radius: 10px;      /* curved edges */
+  overflow: hidden;
+  margin: 20px;          /* space between cards */
+  transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+#projects .card:hover {
+  transform: scale(1.1);
+}
+
+#projects .card:hover .service-image{
+  opacity: 0.9;
+}
+
+#projects .service-image img {
+  width: 100%
+}
+
+#projects .info p{
+  font-size: 1em;
+  font-weight: 400;
+  word-spacing: 0.7px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding-top: 0em;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right:1.5em ;
 }
 
 
 
-.code-icons img{
-  color: #fff;
-    font-size: 1.7em;
-    padding-right: 30px;
-}
