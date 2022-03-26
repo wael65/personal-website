@@ -37,11 +37,28 @@
     color: white;
   }
 
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .topnav a {
+      float: left;
+      font-size: 0.7em;
+      padding: 0px 10px;
+    }
+    
+    header {
+      padding: 10px 10px 10px 30px;
+    }
+  }
+  
+
   section {
     padding: 100px 200px;
-}
+  }
 
-.main {
+  .main {
     padding: 150px 200px;
     width: 100%;
     min-height: 100vh;
@@ -139,10 +156,33 @@
   align-content: center;
 }
 
+@media (max-width:450px){
+  body{
+      font-size: 10px;
+  }
+
+  .main{
+      padding: 20em 10em 20em 5em;
+      font-size: 50%;
+      min-height: 50vh;
+  }
+
+
+}
+
+
+#bio{
+background: url(images/back-white.png) no-repeat;
+background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .bio{
-  background-color: #fff;
+  background-color: rgb(232, 238, 245);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */ 
   width: 80em;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   padding: 25px;            /* space inside cards */
   margin: 15px;             /* space between cards */
@@ -159,7 +199,6 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 
 .bio .info {
  text-align: left;
@@ -193,18 +232,20 @@
 }
 
 .content .bio-card{
-  background-color: #fff;
   width: 8em;
   align-content: center;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  text-align: center;
   border-radius: 10px;      /* curved edges */
-  padding: 25px;            /* space inside cards */
+  padding: 15px;            /* space inside cards */
   margin: 15px;             /* space between cards */
   transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+  background-color: rgb(232, 238, 245);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */ 
 }
 
 .content .bio-card .icon {
-  margin-left: 10px;
+  align-items: center;
 }
 
 
@@ -216,18 +257,77 @@
   color: #3a6cf4;
   font-size: 0.9em;
   font-weight: 700; 
-  text-align: center;
   padding-top: 10px;
 }
 
+@media (max-width:450px){
+
+  #bio {
+     padding-top: 30px;
+  }
+
+  .bio-title {
+    margin-bottom: 10px;
+    padding-left: 70px;
+  }
+
+  .content .bio-card {
+   align-content: center;
+  }
+  
+   header {
+    width: 100%;
+   }
+
+   .content  {
+     padding-right: 3em;
+   }
+
+  .content .info-code h3{
+    color: #3a6cf4;
+    font-size: 0.9em;
+    font-weight: 700; 
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+   
+  }
+
+  .content .info-code{
+    display: inline-flex;
+    align-content: center;
+  }
+
+  .cards {
+      padding: 10em 10em 10em 3em;
+      min-height: 50vh;
+      width: auto  ;
+      align-items: center;
+  }
+
+  .cards .content{
+    width:130%;
+   
+  }
+
+}
+
+
+
 .card {
-  background-color: #fff;
+  background-color: rgb(200, 223, 236);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */
   width: 21.25em;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   padding: 25px;            /* space inside cards */
   margin: 15px;             /* space between cards */
   transition: 0.7s ease;    /* its manner when mouse pointer move to it */
+}
+
+.card .content{
+  background-color: rgb(250, 252, 252);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */
 }
 
 .card:hover {
@@ -269,7 +369,7 @@
 }
 
 #services .card {
-  background-color: #fff;
+  background-color: rgb(203, 225, 250);
   border: 1px solid #fff;
   min-height: 25em;
   width: 18.5em;
@@ -285,6 +385,13 @@
   transform: scale(1.1);
 }
 
+
+#services .content .card {
+  background-color: rgb(231, 239, 248);
+  border: 1px solid rgb(5, 5, 5);
+  box-shadow: 3px 5px 7px rgba(252, 252, 252, 0.61);    /* shadow style */
+}
+
 #services .card .icon {
   color: #3a6cf4;
   font-size: 1em;
@@ -298,8 +405,25 @@
   text-align: center;
 }
 
+@media (max-width:450px){
+  #services {
+    padding: 100px 170px;
+ }
+
+  #services .card{
+    min-width: 20em;
+ }
+
+ #services .title {
+   margin-bottom: 10px;
+ }
+
+}
+
 #projects {
   padding: 100px 200px;
+  background: url(images/back-white.png) no-repeat;
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -318,12 +442,12 @@
 }
 
 #projects .card {
-  background-color: #fff;
+  background-color: rgb(232, 238, 245);
   border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */ 
   min-height: 13em;
   width: 19em;
   padding: 0px;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   overflow: hidden;
   margin: 20px;          /* space between cards */
@@ -342,6 +466,10 @@
   width: 100%
 }
 
+#projects .info{
+align-items: end;
+}
+
 #projects .info p{
   font-size: 1em;
   font-weight: 400;
@@ -352,6 +480,38 @@
   padding-left: 1.5em;
   padding-bottom: 1.5em;
   padding-right:1.5em ;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3a6cf4;
+  text-align: center  ;
+  font-size: 0.9em;         
+  font-weight: 600;
+  display: inline-block;        /* allow me use padding */
+  padding: 0.7em 1.6em;
+  letter-spacing: 1px;        /* increase the space between letters */
+  border-radius: 10px;       /* curved edges */
+  margin-bottom: 30px;
+  transition: 0.7s ease;      /* its manner when mouse pointer move to it */
+}
+
+
+.more-details:hover {
+  color: #cac9cc;
+}
+
+@media (max-width:450px){
+
+  #projects {
+    padding: 100px 170px;
+ }
+
+  #projects .card{
+    min-width: 20em;
+ }
+
 }
 
 #certificates {
@@ -396,10 +556,25 @@
 
 
 
+@media (max-width:450px){
+
+  #certificates {
+    padding: 100px 170px;
+ }
+
+  #certificates .card-cer{
+    min-width: 20em;
+ }
+
+}
 
 .contacts {
   min-height: 82vh;
   padding: 50px 200px;
+  background: url(images/back-white.png) no-repeat;
+background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -409,9 +584,10 @@
   flex-direction: row;  /* the cards arrange in row */
   flex-wrap: wrap;   /* the extra card will be in another row */
   align-content: center;
-  background-color: #fff;
+  background-color: rgb(232, 238, 245);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */ 
   width: 30em;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   padding: 25px;            /* space inside cards */
   margin: 15px;             /* space between cards */
@@ -420,9 +596,10 @@
 }
 
 .contact-card2 {
-  background-color: #fff;
   width: 62em;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);    /* shadow style */ 
+  background-color: rgb(232, 238, 245);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(1 1 1 / 15%);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   padding: 25px;            /* space inside cards */
   margin: 15px;             /* space between cards */
@@ -450,7 +627,7 @@
   color: #3a6cf4;
   font-size: 4em;
   text-align: right;
-  padding-right: 1.5em;
+  padding-right: 1.2em;
 }
 
 .contact-card2 .icon {
@@ -496,6 +673,23 @@
 padding-left: 25px;
 }
 
+
+@media (max-width:450px){
+
+  #contacts {
+    padding: 100px 190px;
+ }
+
+#contacts .content{
+align-items: center;
+
+}
+#contacts .icon {
+  text-align: center;
+  padding: 0px;
+  
+  }
+}
 .footer {
   background-color: #000016;
   color: #fff;
@@ -520,16 +714,5 @@ padding-left: 25px;
   padding: 0 12px 0 0;
   text-shadow: 2px 3px #3a6cf4;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 

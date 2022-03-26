@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- Load Google Fonts -->
    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Goblin+One&display=swap" rel="stylesheet">
@@ -10,19 +11,24 @@
    <!-- Load Styles -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    <link rel="stylesheet" href="style.css">
    <title>my personal website</title>
 </head>
 <body>
 
     <header>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a class="active" href="#main">Home</a>
             <a href="#bio">Bio</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#certificates">Certificates</a>
             <a href="#contacts">Contacts</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
     </header>
 
@@ -123,6 +129,9 @@
                 <div class="info">
                     <h3>landing Page </h3>
                     <p>In this project, I create a website using HTML and CSS which modified with JavaScript to make it responsive to users' actions.</p>
+                    <strong class="project-title">
+                        <a href="https://github.com/wael65/landingPage" target="_blank" class="more-details">More details</a>
+                    </strong>
                 </div>
             </div>
             <div class="card">
@@ -131,7 +140,10 @@
                 </div>
                 <div class="info">
                     <h3>weather-journal-app </h3>
-                    <p>In this project, I create an asynchronous web app that uses Web API and user data to dynamically update the UI.</p>
+                    <p>This is an asynchronous web app that uses Web API, user data, and get the info from the weather website and dynamically update the UI.</p>
+                    <strong class="project-title">
+                        <a href="https://github.com/wael65/weather-journal-app" target="_blank" class="more-details">More details</a>
+                    </strong>
                 </div>
             </div>
             <div class="card">
@@ -141,6 +153,9 @@
                 <div class="info">
                     <h3>Image Processing API</h3>
                     <p>I built an API to resize images by placing them in the endpoint with its size parameters and save new image in the destination folder.</p>
+                    <strong class="project-title">
+                        <a href="https://github.com/wael65/ImageProcessingAPI" target="_blank" class="more-details">More details</a>
+                    </strong>
                 </div>
                 
             </div>
@@ -181,8 +196,7 @@
             </div>
             <div class="contact-card">
                 <div class="icon">
-               
-                    <i class="fas fa-phone"></i>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
                 </div>
                 <div class="info">
                     <h3>WhatsApp</h3>
@@ -214,5 +228,6 @@
     </div>
 </footer>
 
+<script src="app.js"></script>;
 </body>
 </html>
