@@ -8,6 +8,13 @@
     scroll-behavior: smooth; 
   }
 
+  body{
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+
   header {
     background-color: #333;
     width: 100%;
@@ -44,16 +51,15 @@
   @media screen and (max-width: 450px) {
     .topnav a {
       float: left;
-      font-size: 0.7em;
+      font-size: 0.8em;
       padding: 0px 10px;
     }
     
     header {
-      padding: 10px 10px 10px 30px;
+      padding: 12px 10px 12px 30px;
     }
   }
   
-
   section {
     padding: 100px 200px;
   }
@@ -159,15 +165,14 @@
 @media (max-width:450px){
   body{
       font-size: 10px;
+      
   }
 
   .main{
-      padding: 20em 10em 20em 5em;
-      font-size: 50%;
+      padding: 20em 2em 20em 4em;
+      font-size: 65%;
       min-height: 50vh;
   }
-
-
 }
 
 
@@ -263,12 +268,13 @@ background-size: cover;
 @media (max-width:450px){
 
   #bio {
-     padding-top: 30px;
-  }
+     padding-top: 50px;
+    }
 
   .bio-title {
     margin-bottom: 10px;
-    padding-left: 70px;
+    padding-left: 45px;
+
   }
 
   .content .bio-card {
@@ -280,8 +286,9 @@ background-size: cover;
    }
 
    .content  {
-     padding-right: 3em;
-   }
+    
+     
+  }
 
   .content .info-code h3{
     color: #3a6cf4;
@@ -310,8 +317,6 @@ background-size: cover;
   }
 
 }
-
-
 
 .card {
   background-color: rgb(200, 223, 236);
@@ -373,7 +378,8 @@ background-size: cover;
   border: 1px solid #fff;
   min-height: 25em;
   width: 18.5em;
-  padding: 15px;
+  padding: 20px;
+  
   box-shadow: 0 5px 25px rgba(58, 108, 244, 0.5);    /* shadow style */ 
   border-radius: 10px;      /* curved edges */
   overflow: hidden;
@@ -398,6 +404,10 @@ background-size: cover;
   text-align: center;
 }
 
+#services .card .info p{
+text-align: justify;
+}
+
 #services .card img {
   color: #3a6cf4;
   margin-top: 20px;
@@ -407,7 +417,7 @@ background-size: cover;
 
 @media (max-width:450px){
   #services {
-    padding: 100px 170px;
+    padding: 50px 180px;
  }
 
   #services .card{
@@ -505,13 +515,16 @@ align-items: end;
 @media (max-width:450px){
 
   #projects {
-    padding: 100px 170px;
- }
+    padding: 50px 180px;
+  }
+
+  #projects .title{
+    margin-bottom: 0px;
+  }
 
   #projects .card{
     min-width: 20em;
  }
-
 }
 
 #certificates {
@@ -559,8 +572,12 @@ align-items: end;
 @media (max-width:450px){
 
   #certificates {
-    padding: 100px 170px;
+    padding: 50px 180px;
  }
+
+#certificates .title{
+  margin-bottom: 0px;
+}
 
   #certificates .card-cer{
     min-width: 20em;
@@ -592,7 +609,7 @@ background-size: cover;
   padding: 25px;            /* space inside cards */
   margin: 15px;             /* space between cards */
   transition: 0.7s ease;    /* its manner when mouse pointer move to it */
-  
+  font-size: 12px;
 }
 
 .contact-card2 {
@@ -628,11 +645,12 @@ background-size: cover;
   font-size: 4em;
   text-align: right;
   padding-right: 1.2em;
+  padding-bottom: 0px;
 }
 
 .contact-card2 .icon {
   color: #3a6cf4;
-  font-size: 2em;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -642,7 +660,7 @@ background-size: cover;
 
 .contact-card .info h3{
   color: #3a6cf4;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: 700;
   margin: 10px;
 }
@@ -655,9 +673,10 @@ background-size: cover;
 }
 
 
+
 .contact-card2 .icon span{
   color: #3a6cf4;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin: 10px;
 }
@@ -677,8 +696,13 @@ padding-left: 25px;
 @media (max-width:450px){
 
   #contacts {
-    padding: 100px 190px;
+    padding: 50px 180px;
+    padding-left: 180px;
  }
+
+ #contacts .title{
+  margin-bottom: 0px;
+}
 
 #contacts .content{
 align-items: center;
@@ -687,13 +711,27 @@ align-items: center;
 #contacts .icon {
   text-align: center;
   padding: 0px;
-  
   }
+
+#contacts .contact-card2 {
+margin:  5px 15px;
+padding-left: 30px;
+padding-right: 30px;
+font-size: 14px;
 }
+
+#contacts .contact-card{
+ font-size: 14px;
+ min-width: 197px;
+ 
+}
+}
+
 .footer {
   background-color: #000016;
   color: #fff;
   padding: 1em;
+  
   display: flex;
   justify-content: space-between;
 }
@@ -716,3 +754,8 @@ align-items: center;
 }
 
 
+@media (max-width:450px){
+.footer {
+ padding-left: 2em;
+}
+}
